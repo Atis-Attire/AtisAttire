@@ -1,0 +1,38 @@
+.products_article{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.products-card-format{
+    height: 310px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid #cbcac6;
+
+}
+
+.products-blade-image{
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+}
+.products-blade-name{
+    padding-left: 5px;
+}
+.products-blade-price{
+     padding-left: 5px;
+}
+
+.add-to-cart{
+    background-color: #8685EF;
+    border-radius: 5px;
+}
+
+.price--and-cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

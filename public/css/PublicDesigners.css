@@ -1,0 +1,20 @@
+.designers_article{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.designers-card-format{
+    height: 410px;
+    width: 400px;
+    border-radius: 10px;
+
+}
+
+.designers-blade-image{
+    height: 350px;
+    width: 400px;
+    border-radius: 10px;
+}
