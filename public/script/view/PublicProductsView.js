@@ -15,19 +15,6 @@ class PublicProductsView {
 
 
 
-
-        this.modellDisplay = $(`#productMainImg${element.id}`);
-        this.modellDisplay.on("click", () => {
-            console.log("Peti a király");
-            this.clickTrigger('modellDisplay');
-        });
-
-
-    }
-
-    clickTrigger(eventName) {
-        const event = new CustomEvent(eventName, {detail: this.#element.id});
-        window.dispatchEvent(event);
     }
 
 }

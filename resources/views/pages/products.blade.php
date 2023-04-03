@@ -1,16 +1,8 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Products') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <div class="products_article">
-                </div>
-            </div>
-        </div>
+@section('head')
+<link href="{{ url('css/PublicProducts.css') }}" rel="stylesheet" />
+@endsection
+@extends('layouts.welcome')
+@section('content')
+    <div class="products_article">
     </div>
-</x-app-layout>
+@endsection

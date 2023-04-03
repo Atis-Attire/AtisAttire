@@ -22,8 +22,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('layouts/welcome');
+})->name('welcome');
+
+Route::get('/products', function () {
+    return view('pages/products');
+})->name('products');
+
+Route::get('/product/{id}', function ($id) {
+    return view('pages/product', [
+        "id" => $id
+    ]);
+})->name('product');
+
+Route::get('/designers', function () {
+    return view('pages/designers');
+})->name('designers');
 
 
 Route::middleware([
@@ -36,20 +50,10 @@ Route::middleware([
         return view('pages/dashboard');
     })->name('dashboard');
 
-    Route::get('/products', function () {
-        return view('pages/products');
-    })->name('products');
-
-    Route::get('/product/{id}', function ($id) {
-        return view('pages/product', [
-            "id" => $id
-        ]);
-    })->name('product');
 
 
-    Route::get('/designers', function () {
-        return view('pages/designers');
-    })->name('designers');
+
+    
 });
 
 
