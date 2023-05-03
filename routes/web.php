@@ -22,8 +22,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts/welcome');
-})->name('welcome');
+    return view('pages/products');
+})->name('products');
 
 Route::get('/products', function () {
     return view('pages/products');

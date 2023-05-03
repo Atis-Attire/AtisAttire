@@ -4,7 +4,6 @@ import PublicProductsView from "../view/PublicProductsView.js";
 class ProductsController{
     constructor(){
         const datamodell = new DataModell();
-        console.log("sajt")
         datamodell.dataIn('/api/modells', this.displayProducts);
     }
 

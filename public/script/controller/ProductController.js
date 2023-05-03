@@ -4,9 +4,9 @@ import PublicProductView from "../view/PublicProductView.js";
 class ProductController{
     constructor(){
         const datamodell = new DataModell();
-        let modell_id = document.querySelector('meta[name="modell"]').content;
-        this.productDescribe = '/api/modells/'+ modell_id;
-        datamodell.dataIn(this.productDescribe, this.displayProduct);
+        let id = document.querySelector('meta[name="modell"]').content;
+        this.productDescription = '/api/modells/'+ id;
+        datamodell.dataIn(this.productDescription, this.displayProduct);
         
     }
 

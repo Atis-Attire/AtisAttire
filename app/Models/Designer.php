@@ -15,7 +15,7 @@ class Designer extends Model
     protected $fillable = [
         'name',
         'picture',
-        'describe'
+        'description'
     ];
 
     public function modells(){

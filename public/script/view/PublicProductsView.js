@@ -4,11 +4,10 @@ class PublicProductsView {
         this.#element = element;
         parentElement.append(`
           <div class="products-card-format">
-              <a href="/product/${element.id}"><img id="productMainImg${element.id}" class="products-blade-image" src="${element.picture}" alt=""></a>
-              <p class="products-blade-name">${element.name}</p>
+              <a href="/product/${element.id}"><img id="productMainImg${element.id}" class="products-blade-image" src="${element.picture}" alt=""></a>          
               <div class="price--and-cart">
-                <p class="products-blade-price">${element.price} Ft</p>
-                <button class="add-to-cart">Add to cart</button>
+                <span class="products-blade-name">${element.name}</span>
+                <span class="products-blade-price">${element.price} Ft</span>
               </div>
           </div>
         `);

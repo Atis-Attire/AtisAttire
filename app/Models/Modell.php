@@ -13,7 +13,7 @@ class Modell extends Model
     protected $fillable = [
         'name',
         'designer',
-        'describe',
+        'description',
         'picture',
         'season',
         'category',
